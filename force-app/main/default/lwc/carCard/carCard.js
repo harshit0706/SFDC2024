@@ -45,7 +45,7 @@ export default class CarCard extends LightningElement {
         this.carSelectionSubscription = subscribe(this.messageContext,CAR_SELECTED_MC, (message)=>this.handleCarSelected(message))
     }
     handleCarSelected(message){
-        console.log('CarCard- carId',message)
+        //console.log('CarCard- carId',message)
         this.recordId = message.carId
     }
     disconnectedCallback(){

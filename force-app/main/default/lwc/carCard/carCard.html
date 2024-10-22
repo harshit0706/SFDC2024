@@ -1,5 +1,9 @@
 <template>
     <lightning-card title={carName} icon-name="standard:apex_plugin">
+        <lightning-button-icon icn-name="utility:expand_alt" 
+                               slot="actions" 
+                               onclick={handleNavigateToRecord}>
+        </lightning-button-icon>
         <template if:true={recordId}>
             <div class="slds-m-horizontal_medium">
                 <img src={carPictureUrl} alt="Car Picture"/>
@@ -18,7 +22,7 @@
             </div>
         </template>
         <template if:false={recordId}>
-            Select a car to see details...
+            <c-car-placeholder message="Select car to display"></c-car-placeholder>
         </template>
     </lightning-card>
 </template>

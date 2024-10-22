@@ -58,3 +58,7 @@ input{
     color: var(--light-wight);
     border-color: var(--light-pink);
 }
+.result-value{
+    font-size: 30px;
+    color: var(--light-blue);
+}
